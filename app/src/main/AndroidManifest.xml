@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theuniversityofdodoma.markeet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name="com.theuniversityofdodoma.markeet.ThisApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- List Of Activity Class -->
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityMain" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityInstruction" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityNewsInfo" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityNewsInfoDetails" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityCategoryDetails" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityProductDetails" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityFullScreenImage" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivitySearch" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityNotification" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityWishlist" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityShoppingCart" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityCheckout" />
+        <activity android:name="com.theuniversityofdodoma.markeet.ActivityOrderHistory" />
+        <activity
+            android:name="com.theuniversityofdodoma.markeet.ActivityDialogNotification"
+            android:theme="@style/AppTheme.Dialog.NoActionBar" />
+        <activity
+            android:name="com.theuniversityofdodoma.markeet.ActivitySettings"
+            android:theme="@style/AppThemeSetting" />
+
+        <!-- Ads activity -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- fireBase service -->
+        <service android:name="com.theuniversityofdodoma.markeet.fcm.FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- fireBase iid service -->
+        <service android:name="com.theuniversityofdodoma.markeet.fcm.FcmInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

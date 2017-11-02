@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "995506666833",
+    "firebase_url": "https://testmarkeet-706c6.firebaseio.com",
+    "project_id": "testmarkeet-706c6",
+    "storage_bucket": "testmarkeet-706c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995506666833:android:75069a301e1c93ba",
+        "android_client_info": {
+          "package_name": "com.theuniversityofdodoma.markeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995506666833-072ouvvt7d6jje5e6g1n41sil8udus3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKa-OtgVxKA6-DdmCFB392gu7Spv3Mt4c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
